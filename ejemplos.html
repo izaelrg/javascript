@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplos Javascript</title>
+</head>
+<body>
+  <!-- ESTE ES EL PRIMER EJEMPLO
+  <h1>Peso en otro Planeta</h1>
+  <p>En la tierra pesas distinto que en Marte o Jupiter</p>
+  <script>
+    let usuario = prompt(`¿Cuál es tu peso?`)
+    // Se agrega el parseInt para que nuestro valor sea numérico
+    let planeta = parseInt(prompt(`Elige tu planeta:\n1 es Marte, 2 es Jupiter`))
+    const g_tierra = 9.8
+    const g_marte = 3.7
+    const g_jupiter = 24.8
+    // Con *parseInt* convertimos un valor string a un valor numérico
+    // Con *parseFloat* convertimos el valor en flotante(un número con decimal)
+    // Con *toFixed()* hacemos que salgan la cantidad de decimales que escribimos dentro del parentesis
+    let peso = parseInt(usuario)
+    let peso_final
+
+    // Definimos la variable nombre para despues utilizar el nombre del Planeta en el mensaje final
+    let nombre;
+    if (planeta == 1) {
+      peso_final = peso * g_marte / g_tierra
+      nombre = 'Marte'
+    }
+    else if (planeta == 2) {
+      peso_final = peso * g_jupiter / g_tierra
+      nombre = 'Jupiter'
+    }
+    else {
+      peso_final = 1000000
+      nombre = 'xD'
+    }
+
+    // También podemos con *parseInt* convertimos un valor flotante(con decimal) a un valor entero
+    peso_final = (peso_final.toFixed(2))
+    // document.write("Tú peso en Marte es <strong>" + peso_final + " kilos</strong>")
+    document.write(`Tú peso en ${nombre} es <strong>${peso_final} kilos</strong>`)
+  </script> -->
+
+  <!-- ESTE ES EL SEGUNDO EJEMPLO
+  <h1>Jugando con Window y con Document</h1>
+  <script src="js/externo.js"></script> -->
+
+  <!-- VILLA PLATZI -->
+  <!-- <canvas id="lavilla" width="500" height="500"></canvas>
+  <script src="js/villa.js"></script> -->
+
+  <!-- FizzBuzz -->
+  <!-- <script src="js/fizzbuzz.js"></script> -->
+
+  <!-- Pakiman -->
+  <!-- <script src="js/pakiman.js"></script> -->
+
+  <!-- Cajero -->
+  <div>
+    <img src="img/cajero.gif" alt="cajero">
+  </div>
+  <div>
+    <p>
+    <input type="number" id="dinero">
+    <input type="button" value="Enviar" id="extraer">
+  </p>
+    <p id="resultado"></p>
+  </div>
+  <script src="js/cajero.js"></script>
+</body>
+</html>
