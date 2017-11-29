@@ -36,8 +36,13 @@
     a que variables tienes acceso en cada parte del código. Exiten dos tipos de scope, el scope global y el scope local.</p>
     <p>Un <span class="tag">closure</span> es una función que recuerda el entorno en el cual fue creada. Una función interna definida
     en una función externa.</p>
-    <p>Un <span class="tag">callback</span> es cuando pasas una función como parámetro a otra función y que esa función se ejecute</p>
-    <p>Dentro del HTML escrimos las etiquetas &ltscript&gt &lt/script&gt</span> y dentro de ellas escribimos nuestro código javascript.</p>
+    <p>Un <span class="tag">callback</span> es cuando pasas una función como parámetro a otra función y es invocada dentro de esta ultima</p>
+    <p>Un <span class="tag">generador</span> es una funcion que se detiene en un punto con <strong>yield</strong> hasta que se le pide
+    un siguiente valor con <strong>next</strong>. El generador se representa con <strong>function*</strong></p>
+    <p>Las promesas <span class="tag">Promise</span> reciben dos parametros <strong>resolve</strong> y <strong>reject</strong>.
+    En <strong>resolve</strong> se recibe la respuesta cuando todo se ejecuto sin problema, por otro lado en <strong>reject</strong>
+    llega la respuesta cuando se presenta un error.<br>Con <strong>.then</strong> procesamos la respuesta de la promesa cuando todo
+    paso sin error y con <strong>.catch</strong> maneja el error cuando se presenta.</p>
     <p>Con <span class="tag">document.write</span> escribimos un mensaje en el html.</p>
     <p>Con <span class="tag">alert</span> envía una ventana emergente en el navegador con un mensaje en pantalla ejemplo: <span class="code">alert ("Hola Mundo!")</span></p>
     <p>Para concatenar una cadena de texto (string) con una variable o función
@@ -91,6 +96,7 @@
     <h2>Configurar node.js</h2>
     <p></p>
     <p>Descargar de la siguiente página <a href="https://nodejs.org" target="_blank">Nodejs</a></p>
+    <h3>Configurando nuestro servidor web</h3>
     <p>Instalamos nuestro servidor web con <strong>express</strong> para instalar <strong>express</strong> entramos al siguiente <a href="https://www.npmjs.com">sitio web</a> y buscamos el paquete,
     podemos utilizar el siguiente comando en terminal para instalarlo <strong>npm install express</strong> este comando se ejecuta dentro de la carpeta local donde guardaremos el archivos que va aejecutar
     el siguiente código: <div class="code">var express = require('express')<br><br>
@@ -101,7 +107,7 @@
     })<br><br>
     app.listen(3000)</div></p><br>
     Después de tener tanto el archivo con el código y la carpeta que se instala de express ejecutamos el siguiente comando en la terminal desde la dirección de la carpeta que contiene los dos archivos
-    <div class="tag">node nombredetuarchivo.js</div>
+    <div class="tag">node server.js</div>
 
 
 
